@@ -1,6 +1,6 @@
 # Geeks meet
 
-Add your skills and connect with your fellow Geeks (coders)
+Add your skills and connect with your fellow Geeks (coders) [Geeksmeet](https://iamslok.github.io/geeksmeet/)
 
 <img width="917" alt="image" src="https://user-images.githubusercontent.com/90669886/210132877-b50acfb0-a788-4202-9f45-b86b42df5510.png">
 
