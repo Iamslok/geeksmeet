@@ -1,6 +1,6 @@
-# Geeks meet
+# Geeksmeet
 
-Add your skills and connect with your fellow Geeks (coders) [Geeksmeet](https://iamslok.github.io/geeksmeet/)
+Add your skills and connect with your fellow Geeks (coders): [Geeksmeet](https://iamslok.github.io/geeksmeet/).
 
 <img width="917" alt="image" src="https://user-images.githubusercontent.com/90669886/210132877-b50acfb0-a788-4202-9f45-b86b42df5510.png">
 
@@ -23,17 +23,16 @@ $ ng serve -open
 4. Angular
 5. Typescript
 
-`Remember you don't have to expert on this below stack basics is good enought to contribute`
+`Remember, you don't have to expert in this stack. Just knowing the basics is good enough to contribute!`
 
 # Issues
 
-Find any bugs report an issue or any new ideas??
+Want to report a bug, an issue, or a new idea?
 
-`Submit or report in Issues section on above`
+Submit or report it in the Issues section [here](https://github.com/Iamslok/geeksmeet/issues)!
 
 # Contributions
 
-Anyone can contribute to this project, find Issues on above Issues section and contribute 
+Anyone can contribute to this project. Check the [Issues](https://github.com/Iamslok/geeksmeet/issues) section or find "good first issues" in the [Contribute](https://github.com/Iamslok/geeksmeet/contribute) section.
 
-
-
+Thank you!
