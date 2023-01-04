@@ -13,7 +13,7 @@ $ git clone https://github.com/Iamslok/geeksmeet.git
 
 2. Start the dev server by running the command below. Navigate to `cd src` and run below command.
 ```bash
-$ ng serve --open
+$ ng serve -open
 ```
 
 # Tech stack
