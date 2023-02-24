@@ -1,73 +1,98 @@
-<div class="container">
-  <form>
-    <h2>Add Your Skills</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" placeholder="" id="name" />
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Add Your Profile</h1>
+    </header>
+    <div class="form-wrap">	
+      <form id="survey-form">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+            </div>
+          </div>
         </div>
-      </div>
-      <!--  col-md-6   -->
-
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="last">Occupation</label>
-          <input type="text" class="form-control" placeholder="" id="last" />
+        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label id="number-label" for="number">Age <small>(optional)</small></label>
+              <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>current role</label>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
         </div>
-      </div>
-      <!--  col-md-6   -->
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="company">Skills</label>
-          <input type="text" class="form-control" placeholder="" id="company" />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="company">Skills</label>
+              <p-multiSelect defaultLabel="select programming languages" [options]="ProgLang" [(ngModel)]="selectedProgLang" optionLabel="name" [style]="{'width':'90%'}" name="select"></p-multiSelect>
+            </div>
+          </div>
+          <!--  col-md-6   -->
+    
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="phone">GitHub</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="GitHub Link"
+              />
+            </div>
+          </div>
+          <!--  col-md-6   -->
         </div>
-      </div>
-      <!--  col-md-6   -->
-
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="phone">GitHub</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="phone"
-            placeholder="GitHub Link"
-          />
+        <!--  row   -->
+    
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Instagram</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="username"
+              />
+            </div>
+          </div>
+          <!--  col-md-6   -->
+    
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="url"
+                >Twitter</label
+              >
+              <input type="url" class="form-control" id="url" placeholder="username" />
+            </div>
+          </div>
+          <!--  col-md-6   -->
         </div>
-      </div>
-      <!--  col-md-6   -->
-    </div>
-    <!--  row   -->
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="email">Instagram</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="username"
-          />
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
+          </div>
         </div>
-      </div>
-      <!--  col-md-6   -->
-
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="url"
-            >Twitter</label
-          >
-          <input type="url" class="form-control" id="url" placeholder="username" />
-        </div>
-      </div>
-      <!--  col-md-6   -->
-    </div>
-    <!--  row   -->
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
+      </form>
+    </div>	
+  </div>

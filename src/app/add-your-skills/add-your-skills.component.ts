@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-your-skills.component.css']
 })
 export class AddYourSkillsComponent implements OnInit {
+  ProgLang = [
+    {name: 'HTML', code: 'HTML'},
+    {name: 'CSS', code: 'CSS'},
+    {name: 'JAVASCRIPT', code: 'JAVASCRIPT'},
+    {name: 'TYPESCRIPT', code: 'TYPESCRIPT'},
+    {name: 'C#', code: 'C#'}
+];
 
-  constructor() { }
+  selectedProgLang!: string[];
+
+  constructor() {
+      
+  }
 
   ngOnInit(): void {
+  this.ProgLang = [
+      {name: 'Html', code: 'HTML'},
+      {name: 'CSS', code: 'CSS'},
+      {name: 'Javascript', code: 'JAVASCRIPT'},
+      {name: 'Typescript', code: 'TYPESCRIPT'},
+      {name: 'C#', code: 'C#'}
+  ];
   }
 
 }
