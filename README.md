@@ -2,7 +2,9 @@
 
 Add your skills and connect with your fellow Geeks (coders): [Geeksmeet](https://iamslok.github.io/geeksmeet/).
 
-<img width="917" alt="image" src="https://user-images.githubusercontent.com/90669886/210132877-b50acfb0-a788-4202-9f45-b86b42df5510.png">
+<img width="917" alt="image" src="https://user-images.githubusercontent.com/105551807/221125907-73cac4d4-6803-4e86-bc06-7507ac53c764.png">
+<img width="917" alt="image" src="https://user-images.githubusercontent.com/105551807/221126137-3c49b03e-03ee-4a4b-b55d-ccc8370ae35a.png">
+<img width="917" alt="image" src="https://user-images.githubusercontent.com/105551807/221122726-8306e00c-6ab4-4af4-ac5a-445365cdecfe.png">
 
 
 # How to run it locally
