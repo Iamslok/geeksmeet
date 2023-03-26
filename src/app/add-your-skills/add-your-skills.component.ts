@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { userProfile } from 'src/assets/models/userprofile';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-add-your-skills',
@@ -15,8 +17,9 @@ export class AddYourSkillsComponent implements OnInit {
 ];
 
   selectedProgLang!: string[];
+  userprofile:userProfile = new userProfile();
 
-  constructor() {
+  constructor(private service:ApiService) {
       
   }
 
@@ -28,6 +31,13 @@ export class AddYourSkillsComponent implements OnInit {
       {name: 'Typescript', code: 'TYPESCRIPT'},
       {name: 'C#', code: 'C#'}
   ];
+  }
+
+  create(){
+    this.userprofile.languages = this.selectedProgLang;
+    this.service.postUserProfile(this.userprofile).subscribe(res=>{
+      console.log(res);
+    })
   }
 
 }

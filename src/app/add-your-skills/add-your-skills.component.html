@@ -8,28 +8,13 @@
           <div class="col-md-6">
             <div class="form-group">
               <label id="name-label" for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label id="email-label" for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label id="number-label" for="number">Age <small>(optional)</small></label>
-              <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" >
+              <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required [(ngModel)]="userprofile.name">
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <label>current role</label>
-              <select id="dropdown" name="role" class="form-control" required>
+              <select id="dropdown" name="role" class="form-control" required [(ngModel)]="userprofile.profile">
                 <option disabled selected value>Select</option>
                 <option value="student">Student</option>
                 <option value="job">Full Time Job</option>
@@ -51,12 +36,14 @@
     
           <div class="col-md-6">
             <div class="form-group">
-              <label for="phone">GitHub</label>
+              <label for="github">GitHub</label>
               <input
-                type="tel"
+                type="text"
                 class="form-control"
-                id="phone"
+                id="github"
+                name="github"
                 placeholder="GitHub Link"
+                [(ngModel)]="userprofile.github"
               />
             </div>
           </div>
@@ -67,12 +54,14 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label for="email">Instagram</label>
+              <label for="linkedin">LinkedIn</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="email"
-                placeholder="username"
+                id="linkedin"
+                name="linkedin"
+                placeholder="LinkedIn Link"
+                [(ngModel)]="userprofile.linkedin"
               />
             </div>
           </div>
@@ -80,17 +69,17 @@
     
           <div class="col-md-6">
             <div class="form-group">
-              <label for="url"
+              <label for="twitter"
                 >Twitter</label
               >
-              <input type="url" class="form-control" id="url" placeholder="username" />
+              <input type="url" class="form-control" id="twitter" placeholder="Twitter Link" name="twitter" [(ngModel)]="userprofile.twitter"/>
             </div>
           </div>
           <!--  col-md-6   -->
         </div>
         <div class="row mb-3">
           <div class="col-md-4">
-            <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
+            <button type="submit" id="submit" class="btn btn-primary btn-block" (click)="create()">Submit</button>
           </div>
         </div>
       </form>
