@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,8 +16,9 @@ export class HomeComponent implements OnInit {
 ];
 
   selectedProgLang!: string[];
+  data: any;
 
-  constructor() {
+  constructor(private service:ApiService) {
       
   }
 
@@ -28,6 +30,10 @@ export class HomeComponent implements OnInit {
       {name: 'Typescript', code: 'TYPESCRIPT'},
       {name: 'C#', code: 'C#'}
   ];
-  }
 
+  this.service.getDevProfiles().subscribe((res)=>{
+    this.data = res;
+    console.log(this.data);
+  })
+  }
 }

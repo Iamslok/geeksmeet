@@ -13,8 +13,8 @@
     </div>
   </div>
 
-  <div class="row pb-5 mb-4">
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+  <div class="row pb-5 mb-4" *ngIf="data && data.user">
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" *ngFor="let item of data.user">
       <!-- Card-->
       <div class="card shadow-sm border-0 rounded">
         <div class="card-body p-0" id="card-override-2">
@@ -25,123 +25,21 @@
             id="img-override"
           />
           <div class="p-4">
-            <h5 class="mb-0">Mark Rockwell</h5>
-            <p class="small text-muted">CEO - Consultant</p>
+            <h5 class="mb-0">{{item.name}}</h5>
+            <p class="small text-muted">{{item.profile}}</p>
             <ul class="social mb-0 list-inline mt-3">
               <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
+                <a href="{{item.github}}" class="social-link"
                   ><i class="fab fa-github"></i
                 ></a>
               </li>
               <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
+                <a href="{{item.twitter}}" class="social-link"
                   ><i class="fab fa-twitter"></i
                 ></a>
               </li>
               <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-      <!-- Card-->
-      <div class="card shadow-sm border-0 rounded">
-        <div class="card-body p-0" id="card-override-2">
-          <img
-            src="https://media.istockphoto.com/id/1255905237/photo/female-it-developer-at-workplace.jpg?s=612x612&w=0&k=20&c=-rMSbdqmY9hZSF19peYkovxotmOmQ3KFrzTlJbmOPTk="
-            alt=""
-            class="w-100 card-img-top"
-          />
-          <div class="p-4">
-            <h5 class="mb-0">Mark Rockwell</h5>
-            <p class="small text-muted">CEO - Consultant</p>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-      <!-- Card-->
-      <div class="card shadow-sm border-0 rounded">
-        <div class="card-body p-0" id="card-override-2">
-          <img
-            src="https://media.istockphoto.com/id/1255905237/photo/female-it-developer-at-workplace.jpg?s=612x612&w=0&k=20&c=-rMSbdqmY9hZSF19peYkovxotmOmQ3KFrzTlJbmOPTk="
-            alt=""
-            class="w-100 card-img-top"
-          />
-          <div class="p-4">
-            <h5 class="mb-0">Mark Rockwell</h5>
-            <p class="small text-muted">CEO - Consultant</p>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-      <!-- Card-->
-      <div class="card shadow-sm border-0 rounded">
-        <div class="card-body p-0" id="card-override-2">
-          <img
-            src="https://media.istockphoto.com/id/1255905237/photo/female-it-developer-at-workplace.jpg?s=612x612&w=0&k=20&c=-rMSbdqmY9hZSF19peYkovxotmOmQ3KFrzTlJbmOPTk="
-            alt=""
-            class="w-100 card-img-top"
-          />
-          <div class="p-4">
-            <h5 class="mb-0">Mark Rockwell</h5>
-            <p class="small text-muted">CEO - Consultant</p>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li class="list-inline-item mx-2">
-                <a href="#" class="social-link"
+                <a href="{{item.linkedin}}" class="social-link"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </li>
